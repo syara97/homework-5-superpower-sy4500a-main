@@ -1,6 +1,4 @@
-from abc import ABC, abstractmethod
-
-class Hero(ABC):
+class Hero(object):
 
     def __init__(self, name, intelligence=0, strength=0, speed=0, durability=0, power=0, combat=0):
         self.__name = name
@@ -93,7 +91,6 @@ class Hero(ABC):
             return False
         return sumOfStats
 
-spiderman = Hero("Spiderman", intelligence=75, strength=50, speed=80, durability=60, power=70, combat=85)
 
 
 

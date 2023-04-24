@@ -1,4 +1,4 @@
-class Villain():
+class Villain(object):
 
     def __init__(self, name, intelligence=0, strength=0, speed=0, durability=0, power=0, combat=0):
         self.__name = name
@@ -91,5 +91,3 @@ class Villain():
             return False
         return sumOfStats
 
-villainObject = Villain("Venom", intelligence=75, strength=50, speed=80, durability=60, power=70, combat=85)
-villainObject.combat = 90
